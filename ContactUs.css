@@ -1,0 +1,101 @@
+#formContain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding: 40px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    width: 500px;
+    padding: 30px;
+    max-width: 800px;
+    border: 2px solid #f39c12;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #f39c12;
+}
+
+
+#submit {
+    margin: 20px auto;
+    width: 150px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #f39c12;
+    transform: scale(1.2);
+}
+
+#name,
+#notes,
+#phonenumber,
+#email {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 10px;
+}
+
+#name>div,
+#notes>div,
+#phonenumber>div,
+#email>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name input,
+#phonenumber input,
+#email input,
+#notes textarea {
+    padding: 5px;
+    width: 100%;
+    background-color: #444;
+    color: #fde8d7;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+
+#name input:focus,
+#phonenumber input:focus,
+#email input:focus,
+#notes textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+    box-shadow: 0 0 8px rgba(243, 156, 18, 0.8);
+}
+
+#firstLast input {
+    width: 45%
+}
+
+
+.before {
+    background-color: #f0f0f0;
+}
+
+#name input.invalid,
+#phonenumber input.invalid,
+#email input.invalid {
+    border: 2px solid red;
+}
+
+
+.span {
+    color: red;
+    /* Error message color */
+    margin-left: 3px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="navBar">
+        <div class="center-buttons">
+            <a href="index.html"><button class="navButton"> Home </button></a>
+            <a href="Portfolio.html"><button class="navButton"> Portfolio </button></a>
+            <a href="ContactUs.html"><button class="navButton"> Contact Us </button></a>
+            <a href="AboutUs.html"><button class="navButton"> About Us </button></a>
+        </div>
+        <a href="https://wa.me/0543069221" class="navButton whatsapp-link" target="_blank"
+            title="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <section id="about">
+        <h1>About Our Engineering Firm</h1>
+        <p>
+            We are a team of dedicated civil engineers with over 20 years of experience in designing and building
+            infrastructure that stands the test of time. Our projects range from residential buildings to large-scale
+            industrial complexes.
+        </p>
+        <p>
+            Our mission is to provide innovative and sustainable engineering solutions that meet the needs of our
+            clients and communities. We are committed to excellence in every aspect of our work and strive to build
+            long-lasting relationships with our clients.
+        </p>
+    </section>
+
+    <div id="map">
+        <gmp-map id="styleMap" center="32.776778, 35.023127" zoom="15" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="32.776778, 35.023127"
+                title="Technion – Israel Institute of Technology"></gmp-advanced-marker>
+        </gmp-map>
+    </div>
+
+
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYs18a4rFzeTR-DzROgIv-v4C9QkmSWsY&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-block">
+                <h3>Follow Us</h3>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-block">
+                <h3>About Us</h3>
+                <p>We are committed to delivering the best engineering solutions. Contact us to learn more about our
+                    services.</p>
+            </div>
+            <div class="footer-block">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="ContactUs.html">Contact</a>
+                <a href="AboutUs.html">About</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

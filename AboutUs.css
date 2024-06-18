@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+#styleMap {
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+    border: 2px solid #f39c12;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#about {
+    padding: 40px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about h1,
+#about h2 {
+    color: #f39c12;
+    margin-bottom: 20px;
+    /* More space between headings */
+}
+
+#about p {
+    margin-bottom: 15px;
+    /* Adjust paragraph margin for uniformity */
+}
