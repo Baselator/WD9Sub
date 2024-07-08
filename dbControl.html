@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Control</title>
+    <link rel="stylesheet" href="dbControl.css">
+</head>
+
+<body>
+    <h1>Manage Civil Engineering Projects</h1>
+
+    <!-- Form to create a new project -->
+    <h2>Create Project</h2>
+    <form id="createProjectForm">
+        <label for="createProjectName">Project Name:</label>
+        <input type="text" id="createProjectName" name="projectName" required>
+        <label for="createLocation">Location:</label>
+        <input type="text" id="createLocation" name="location" required>
+        <label for="createBudget">Budget:</label>
+        <input type="number" id="createBudget" name="budget" required>
+        <label for="createStartDate">Start Date:</label>
+        <input type="date" id="createStartDate" name="startDate" required>
+        <label for="createEndDate">End Date:</label>
+        <input type="date" id="createEndDate" name="endDate" required>
+        <button type="submit">Create Project</button>
+    </form>
+
+    <!-- Form to update an existing project -->
+    <h2>Update Project</h2>
+    <form id="updateProjectForm">
+        <label for="updateProjectId">Project ID:</label>
+        <input type="number" id="updateProjectId" name="projectId" required>
+        <label for="updateProjectName">Project Name:</label>
+        <input type="text" id="updateProjectName" name="projectName">
+        <label for="updateLocation">Location:</label>
+        <input type="text" id="updateLocation" name="location">
+        <label for="updateBudget">Budget:</label>
+        <input type="number" id="updateBudget" name="budget">
+        <label for="updateStartDate">Start Date:</label>
+        <input type="date" id="updateStartDate" name="startDate">
+        <label for="updateEndDate">End Date:</label>
+        <input type="date" id="updateEndDate" name="endDate">
+        <button type="submit">Update Project</button>
+    </form>
+
+    <!-- Form to delete a project -->
+    <h2>Delete Project</h2>
+    <form id="deleteProjectForm">
+        <label for="deleteProjectId">Project ID:</label>
+        <input type="number" id="deleteProjectId" name="projectId" required>
+        <button type="submit">Delete Project</button>
+    </form>
+
+    <!-- Form to get project details -->
+    <h2>Get Project Details</h2>
+    <form id="getProjectForm">
+        <label for="getProjectId">Project ID:</label>
+        <input type="number" id="getProjectId" name="projectId" required>
+        <button type="submit">Get Project Details</button>
+    </form>
+
+    <h2>All Projects</h2>
+    <button id="getAllProjectsButton">Get All Projects</button>
+    <div id="allProjects"></div>
+
+    <script src="dbControl.js"></script>
+</body>
+
+</html>
